@@ -15,6 +15,11 @@ YYYY-MM-DD  Comments
 /****************************************************************************************
 Constants
 ****************************************************************************************/
+
+#define LEDS_FOR_HOURS (u8)4
+#define LEDS_FOR_MINUTES (u8)6
+#define CUSTOM_CODE_ENABLED 1
+
 /* Timing constants */
 #define TIME_250MS          (u16)8191  /* Taccro for X = (0.25s * (32768Hz)) - 1; max = 65535
 This depends on a 32768Hz oscillator and usage of the divider*/
@@ -115,6 +120,7 @@ void Clock_Initialize();  /*Starts the timer 500ms loop to run forever*/
 void Poll_Buttons();       /*Checks if buttons are pressed and makes ClockSM_Button_Press the next state if they are*/
 void Time_Rollover();     /*adjusts the minute, hour and PM to stay in standard format e.g. 13:62PM -> 2:02AM*/
 void Update_Display();      /*Change the display LEDs (hours, Minutes and PM */
+void Update_Display_Hours(); /*Change the display LEDS but just for hours */
 
 /****************************************************************************************
 State Machine Functions
