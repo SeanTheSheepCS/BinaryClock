@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1807</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1355</ColumnWidth1>
+        <ColumnWidth2>361</ColumnWidth2>
+        <ColumnWidth3>90</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>124</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+      <Register/>
+      <WATCH_1>
+        <expressions>
+          <item/>
+        </expressions>
+        <col-names>
+          <item>Expression</item>
+          <item>Location</item>
+          <item>Type</item>
+          <item>Value</item>
+        </col-names>
+        <col-widths>
+          <item>100</item>
+          <item>150</item>
+          <item>100</item>
+          <item>100</item>
+        </col-widths>
+      </WATCH_1>
+      <WATCH_2>
+        <expressions>
+          <item/>
+        </expressions>
+        <col-names>
+          <item>Expression</item>
+          <item>Location</item>
+          <item>Type</item>
+          <item>Value</item>
+        </col-names>
+        <col-widths>
+          <item>100</item>
+          <item>150</item>
+          <item>100</item>
+          <item>100</item>
+        </col-widths>
+      </WATCH_2>
+      <WATCH_3>
+        <expressions>
+          
+          
+          
+          
+          
+          
+        <item>LG_u8ActiveIndex</item><item>u16GlobalCurrentSleepInterval</item><item>BlinkStateMachine</item><item>G_u8ActivePattern</item><item>G_fCurrentStateMachine</item><item/></expressions>
+        <col-names>
+          
+          
+          
+          
+        <item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names>
+        <col-widths>
+          
+          
+          
+          
+        <item>247</item><item>150</item><item>100</item><item>264</item></col-widths>
+      </WATCH_3>
+      <WATCH_4>
+        <expressions>
+          <item/>
+        </expressions>
+        <col-names>
+          <item>Expression</item>
+          <item>Location</item>
+          <item>Type</item>
+          <item>Value</item>
+        </col-names>
+        <col-widths>
+          <item>100</item>
+          <item>150</item>
+          <item>100</item>
+          <item>100</item>
+        </col-widths>
+      </WATCH_4>
+      <Locals>
+        <col-names>
+          
+          
+          
+          
+        <item>Location</item><item>Type</item><item>Value</item><item>Variable</item></col-names>
+        <col-widths>
+          
+          
+          
+          
+        <item>150</item><item>100</item><item>100</item><item>100</item></col-widths>
+      </Locals>
+      <STACK_1>
+        <col-names>
+          <item>Data</item>
+          <item>Frame</item>
+          <item>Location</item>
+          <item>Type</item>
+          <item>Value</item>
+          <item>Variable</item>
+        </col-names>
+        <col-widths>
+          <item>100</item>
+          <item>100</item>
+          <item>130</item>
+          <item>100</item>
+          <item>100</item>
+          <item>100</item>
+        </col-widths>
+        <stack>Stack</stack>
+        <width>4</width>
+        <vars>1</vars>
+        <offset>0</offset>
+      </STACK_1>
+      <Find-in-Files>
+        <ColumnWidth0>460</ColumnWidth0>
+        <ColumnWidth1>65</ColumnWidth1>
+        <ColumnWidth2>790</ColumnWidth2>
+      </Find-in-Files>
+    </Static>
+    <Windows>
+      
+      
+      
+      
+      
+    <Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28861-2962</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-28338-2972</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-29300-5819</Identity>
+            <TabName>Breakpoints</TabName>
+            <Factory>Breakpoints</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-213-12975</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd6>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-6841-2965</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>blink-efwd</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd6><Wnd7>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-17589-2969</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd7><Wnd8>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28255-5839</Identity>
+            <TabName>Register</TabName>
+            <Factory>Register</Factory>
+            <Session>
+              <REG1>0</REG1>
+              <REG2>0</REG2>
+              <Group>0</Group>
+              <States>1</States>
+              <State0>SR</State0>
+            </Session>
+          </Tab>
+          <Tab>
+            <Identity>TabID-5712-5852</Identity>
+            <TabName>Watch 1</TabName>
+            <Factory>WATCH_1</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-15938-5865</Identity>
+            <TabName>Watch 2</TabName>
+            <Factory>WATCH_2</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-13847-5904</Identity>
+            <TabName>Locals</TabName>
+            <Factory>Locals</Factory>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>3</SelectedTab></Wnd8><Wnd9>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18029-5826</Identity>
+            <TabName>Register</TabName>
+            <Factory>Register</Factory>
+            <Session>
+              <REG1>0</REG1>
+              <REG2>0</REG2>
+              <Group>0</Group>
+              <States>0</States>
+            </Session>
+          </Tab>
+          <Tab>
+            <Identity>TabID-26163-5878</Identity>
+            <TabName>Watch 3</TabName>
+            <Factory>WATCH_3</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-3621-5891</Identity>
+            <TabName>Watch 4</TabName>
+            <Factory>WATCH_4</Factory>
+          </Tab>
+          <Tab>
+            <Identity>TabID-27191-24485</Identity>
+            <TabName>Stack 1</TabName>
+            <Factory>STACK_1</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>1</SelectedTab></Wnd9></Windows>
+    <Editor>
+      
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>33</YPos2><SelStart2>2942</SelStart2><SelEnd2>3005</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\blink-efwd-01.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>89</YPos2><SelStart2>4372</SelStart2><SelEnd2>4372</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\typedef_MSP430.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>770</SelStart2><SelEnd2>770</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\cstartup.s43</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>87</YPos2><SelStart2>3171</SelStart2><SelEnd2>3171</SelEnd2></Tab><ActiveTab>3</ActiveTab></Pane><ActivePane>0</ActivePane><Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\blink-efwd-01.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>35</YPos2><SelStart2>3376</SelStart2><SelEnd2>3376</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Program Files\IAR Systems\EW430_KS_5_51_5\430\inc\io430x21x2.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>41</YPos2><SelStart2>2044</SelStart2><SelEnd2>2044</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\msp430x21x2.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>162</YPos2><SelStart2>25298</SelStart2><SelEnd2>25298</SelEnd2></Tab></Pane><Sizes><Pane><X>587758</X><Y>1000000</Y></Pane><Pane><X>412241</X><Y>1000000</Y></Pane></Sizes><SplitMode>4</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-007baed0><key>iaridepm.enu1</key></Toolbar-007baed0><Toolbar-14726060><key>debuggergui.enu1</key></Toolbar-14726060><Toolbar-14726128><key>430fet1</key></Toolbar-14726128></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2><Row3><Sizes/></Row3><Row4><Sizes/></Row4><Row5><Sizes/></Row5><Row6><Sizes/></Row6><Row7><Sizes/></Row7><Row8><Sizes/></Row8><Row9><Sizes/></Row9></Top><Left><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>1093</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>78125</sizeHorzCX><sizeHorzCY>149701</sizeHorzCY><sizeVertCX>78125</sizeVertCX><sizeVertCY>819611</sizeVertCY></Rect></Wnd6></Sizes></Row0></Left><Right><Row0><Sizes><Wnd8><Rect><Top>-2</Top><Left>-2</Left><Bottom>523</Bottom><Right>618</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>78125</sizeHorzCX><sizeHorzCY>149701</sizeHorzCY><sizeVertCX>242188</sizeVertCX><sizeVertCY>392964</sizeVertCY></Rect></Wnd8><Wnd9><Rect><Top>0</Top><Left>0</Left><Bottom>0</Bottom><Right>7</Right><x>-2</x><y>521</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>78125</sizeHorzCX><sizeHorzCY>149701</sizeHorzCY><sizeVertCX>242188</sizeVertCX><sizeVertCY>428144</sizeVertCY></Rect></Wnd9></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1341</Right><x>-2</x><y>-2</y><xscreen>1343</xscreen><yscreen>200</yscreen><sizeHorzCX>524609</sizeHorzCX><sizeHorzCY>149701</sizeHorzCY><sizeVertCX>78125</sizeVertCX><sizeVertCY>149701</sizeVertCY></Rect></Wnd4><Wnd7><Rect><Top>0</Top><Left>0</Left><Bottom>0</Bottom><Right>0</Right><x>1339</x><y>-2</y><xscreen>1223</xscreen><yscreen>200</yscreen><sizeHorzCX>477734</sizeHorzCX><sizeHorzCY>149701</sizeHorzCY><sizeVertCX>78125</sizeVertCX><sizeVertCY>819611</sizeVertCY></Rect></Wnd7></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+
