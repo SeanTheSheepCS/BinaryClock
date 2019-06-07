@@ -321,27 +321,6 @@ They will need to fill out the following functions:
 
 ------------------------------------------------------------------------------*/
 
-void Time_Rollover()
-{
-  if(minuteCounter >= 60)
-  {
-    minuteCounter = minuteCounter - 60;
-    hourCounter = hourCounter + 1;
-  }
-  
-  if(hourCounter >= 13)
-  {
-    hourCounter = hourCounter - 12;
-    PM = PM + 1;
-  }
-  
-  if(PM >= 2)
-  {
-    PM = 0;
-  }//end pm rollover
-  
-} /* end Time_Rollover() */
-
 void Update_Display_Hours()
 {
   if(hourCounter == 0)
@@ -436,3 +415,25 @@ void Update_Display_Hours()
     LedOn(HOUR_LED_THREE);
   }
 } /* end Update_Display */
+
+void Time_Rollover()
+{
+  if(minuteCounter >= 60)
+  {
+    minuteCounter = minuteCounter - 60;
+    hourCounter = hourCounter + 1;
+  }
+  
+  if(hourCounter >= 13)
+  {
+    hourCounter = hourCounter - 12;
+    if(PM == false)
+    {
+      PM = true;
+    }
+    else if(PM == true)
+    {
+      PM = false;
+    }
+  }
+} /* end Time_Rollover() */

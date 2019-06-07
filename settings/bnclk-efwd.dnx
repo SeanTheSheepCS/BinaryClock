@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <settings>
     <Stack>
         <FillEnabled>0</FillEnabled>
@@ -96,15 +96,14 @@
         <Mode>0</Mode>
         <Graph>0</Graph>
         <Symbiont>0</Symbiont>
-        <Exclusions></Exclusions>
+        <Exclusions />
     </DriverProfiling>
     <Breakpoints>
         <Count>0</Count>
     </Breakpoints>
     <FET>
         <Clock_mode>38</Clock_mode>
-        <Extended_Clock_mode>-1</Extended_Clock_mode>
-        <Secure_Password></Secure_Password>
+        <Secure_Password />
         <Extended_Clock_Control_Enable>1</Extended_Clock_Control_Enable>
         <Advanced_Extended_Clock_Control>0</Advanced_Extended_Clock_Control>
         <Emulation_mode>0</Emulation_mode>
@@ -112,8 +111,8 @@
         <Shutting_Down>3</Shutting_Down>
     </FET>
     <Memory_Dump>
-        <Start_address></Start_address>
-        <Lenghth></Lenghth>
+        <Start_address />
+        <Lenghth />
         <Address_info>0</Address_info>
         <Format>0</Format>
         <Dump_registers>0</Dump_registers>
@@ -121,8 +120,17 @@
         <SP>0</SP>
         <SR>0</SR>
         <all_registers>0</all_registers>
-        <File_name></File_name>
+        <File_name />
     </Memory_Dump>
+    <EEM_Sequencer>
+        <Buffer>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Buffer>
+    </EEM_Sequencer>
+    <EEM_Cycle_Counter_0>
+        <Counter0>0000000000000000000000000000000000000000000000000000000000000000</Counter0>
+    </EEM_Cycle_Counter_0>
+    <EEM_Cycle_Counter_1>
+        <Counter1>0000000000000000000000000000000000000000000000000000000000000000</Counter1>
+    </EEM_Cycle_Counter_1>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>

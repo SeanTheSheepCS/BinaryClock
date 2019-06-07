@@ -16,6 +16,9 @@ YYYY-MM-DD  Comments
 Constants
 ****************************************************************************************/
 
+#define true 1
+#define false 0
+
 #define LEDS_FOR_HOURS (u8)4
 #define LEDS_FOR_MINUTES (u8)6
 #define CUSTOM_CODE_ENABLED 1
