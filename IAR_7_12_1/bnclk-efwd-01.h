@@ -124,6 +124,7 @@ void Poll_Buttons();       /*Checks if buttons are pressed and makes ClockSM_But
 void Time_Rollover();     /*adjusts the minute, hour and PM to stay in standard format e.g. 13:62PM -> 2:02AM*/
 void Update_Display();      /*Change the display LEDs (hours, Minutes and PM */
 void Update_Display_Hours(); /*Change the display LEDS but just for hours */
+void Update_Display_AMPM();  /*Change the display LEDS but just for AMPM */
 
 /****************************************************************************************
 State Machine Functions

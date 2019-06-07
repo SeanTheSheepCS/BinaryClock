@@ -60,6 +60,8 @@ LedInformation LG_aLedInfoMinuteLeds[LEDS_FOR_MINUTES] = {{(u16*)0x0021, P1_3_MI
 #define MINUTE_LED_FOUR minuteLeds[4]
 #define MINUTE_LED_FIVE minuteLeds[5]
 
+LedInformation LG_LedInfoPMLed = {(u16*)0x0019, P3_5_POMI_PM_IND};
+#define PM_LED LG_LedInfoPMLed
 #define PM LG_u8PM
 
 /******************** Function Definitions ************************/
@@ -284,6 +286,7 @@ void Update_Display()
   if(CUSTOM_CODE_ENABLED)
   {
     Update_Display_Hours();
+    Update_Display_AMPM();
   }
   else
   {
@@ -294,14 +297,13 @@ void Update_Display()
     {
       Port_Update_Value |= (((LG_u8Hour_Counter<<(i)) & Port3_Update_Mask)>>(2-i));
     }
+    P3OUT &= Port3_Clear_Mask;
+    Port_Update_Value = 0;
+    Port_Update_Value |= ((LG_u8PM<<5)&P3_5_POMI_PM_IND);  
+  
+    //port update value should now be 0 PM 000 h0 h1 h2
+    P3OUT |= Port_Update_Value;
   }
-  
-  // we do PM manually It increments every 12 hours so mask for the LSB to get AM/PM
-  P3OUT &= Port3_Clear_Mask;
-  Port_Update_Value |= ((LG_u8PM<<5)&P3_5_POMI_PM_IND);  
-  
-  //port update value should now be 0 PM 000 h0 h1 h2
-  P3OUT |= Port_Update_Value;
 }
 
 
@@ -320,6 +322,18 @@ They will need to fill out the following functions:
 -void LedOff{LedInformation LedInfo)   turns off the LED with the specified LedInformation
 
 ------------------------------------------------------------------------------*/
+
+void Update_Display_AMPM()
+{
+  if(PM == false)
+  {
+    LedOff(PM_LED);
+  }
+  else if(PM == true)
+  {
+    LedOn(PM_LED);
+  }
+}
 
 void Update_Display_Hours()
 {
@@ -414,7 +428,7 @@ void Update_Display_Hours()
     LedOn(HOUR_LED_TWO);
     LedOn(HOUR_LED_THREE);
   }
-} /* end Update_Display */
+} /* end Update_Display_Hours */
 
 void Time_Rollover()
 {
