@@ -48,7 +48,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1576034734</Checksum>
+        <Checksum>3063677721</Checksum>
     </DebugChecksum>
     <State_Storage>
         <Control_Register>0</Control_Register>
@@ -98,6 +98,15 @@
         <Symbiont>0</Symbiont>
         <Exclusions />
     </DriverProfiling>
+    <EEM_Sequencer>
+        <Buffer>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Buffer>
+    </EEM_Sequencer>
+    <EEM_Cycle_Counter_0>
+        <Counter0>0000000000000000000000000000000000000000000000000000000000000000</Counter0>
+    </EEM_Cycle_Counter_0>
+    <EEM_Cycle_Counter_1>
+        <Counter1>0000000000000000000000000000000000000000000000000000000000000000</Counter1>
+    </EEM_Cycle_Counter_1>
     <Breakpoints>
         <Count>0</Count>
     </Breakpoints>
@@ -122,15 +131,11 @@
         <all_registers>0</all_registers>
         <File_name />
     </Memory_Dump>
-    <EEM_Sequencer>
-        <Buffer>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Buffer>
-    </EEM_Sequencer>
-    <EEM_Cycle_Counter_0>
-        <Counter0>0000000000000000000000000000000000000000000000000000000000000000</Counter0>
-    </EEM_Cycle_Counter_0>
-    <EEM_Cycle_Counter_1>
-        <Counter1>0000000000000000000000000000000000000000000000000000000000000000</Counter1>
-    </EEM_Cycle_Counter_1>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
