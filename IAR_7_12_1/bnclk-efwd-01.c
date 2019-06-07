@@ -164,7 +164,7 @@ void ClockSM_Button_Press()
   }
   else if(!(P3IN&P3_6_BUTTON_2))
   {
-    LG_u8Hour_Counter++;  //button two increases the hour
+    LG_u8Minute_Counter += 60;  //button two increases the hour
   }
   
   Time_Rollover();
@@ -436,18 +436,21 @@ void Time_Rollover()
   {
     minuteCounter = minuteCounter - 60;
     hourCounter = hourCounter + 1;
+    if(hourCounter == 12)
+    {
+      if(PM == false)
+      {
+        PM = true;
+      }
+      else if(PM == true)
+      {
+        PM = false;
+      }
+    }
   }
   
   if(hourCounter >= 13)
   {
     hourCounter = hourCounter - 12;
-    if(PM == false)
-    {
-      PM = true;
-    }
-    else if(PM == true)
-    {
-      PM = false;
-    }
   }
 } /* end Time_Rollover() */
