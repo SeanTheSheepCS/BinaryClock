@@ -82,7 +82,7 @@ void ClockSM_Start()
   if (LG_u8Flash == 3)
   {              //display is off turn it back on
     LG_u8Flash = 0;
-    LG_u8Hour_Counter = 12;       //just in case this gets mixed up somehow
+    LG_u8Hour_Counter = 1;       //starts at one so that the campers can cycle through all numbers
     LG_u8Minute_Counter = 0;      //ditto
     Update_Display();             //Turn on the LED's
   }
@@ -172,7 +172,18 @@ void ClockSM_Button_Press()
   }
   else if(!(P3IN&P3_6_BUTTON_2))
   {
-    LG_u8Minute_Counter += 60;  //button two increases the hour
+    LG_u8Hour_Counter++;  //button two increases the hour
+    if(LG_u8Hour_Counter == 12)
+    {
+      if(LG_u8PM == false)
+      {
+        LG_u8PM = true;
+      }
+      else if(LG_u8PM == true)
+      {
+        LG_u8PM = false;
+      }
+    }
   }
   
   Time_Rollover();
