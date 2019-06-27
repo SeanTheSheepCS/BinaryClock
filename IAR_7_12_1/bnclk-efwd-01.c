@@ -321,10 +321,11 @@ void Update_Display()
 
 
 /*------------------------------------------------------------------------------
-The code the campers will write starts here.
-They will need to fill out the following functions:
--void Time_Rollover()                  turns 60 mins into 1 hour, 12 hours into AM/PM, and a PM value of 2 becomes 0
--void Update_Display()                 makes the right LED turn on 
+The code you will write starts here.
+You will need to fill out the following functions:
+-void Time_Rollover()                  turns 60 mins into 1 hour, 12 hours switches AM and PM, 13 hours becomes 1.
+-void Update_Display_Hours()           turns on the right LEDS to make the hour display work.
+-void Update_Display_AMPM()            turns on the right LED to make the AM/PM display work.
 
 -void LedOn(LedInformation LedInfo)    turns on the LED with the specified LedInformation
 -void LedOff{LedInformation LedInfo)   turns off the LED with the specified LedInformation
@@ -333,28 +334,14 @@ They will need to fill out the following functions:
 
 void Update_Display_AMPM()
 {
-  if(PM == false)
-  {
-    LedOff(PM_LED);
-  }
-  else if(PM == true)
-  {
-    LedOn(PM_LED);
-  }
+  
 }
 
 void Update_Display_Hours()
 {
-  if(hourCounter == 0)
+  if(hourCounter == 1)
   {
     LedOff(HOUR_LED_ZERO);
-    LedOff(HOUR_LED_ONE);
-    LedOff(HOUR_LED_TWO);
-    LedOff(HOUR_LED_THREE);
-  }
-  else if(hourCounter == 1)
-  {
-    LedOn(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
@@ -362,14 +349,14 @@ void Update_Display_Hours()
   else if(hourCounter == 2)
   {
     LedOff(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
+    LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 3)
   {
-    LedOn(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
+    LedOff(HOUR_LED_ZERO);
+    LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
@@ -377,28 +364,28 @@ void Update_Display_Hours()
   {
     LedOff(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
-    LedOn(HOUR_LED_TWO);
+    LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 5)
   {
-    LedOn(HOUR_LED_ZERO);
+    LedOff(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
-    LedOn(HOUR_LED_TWO);
+    LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 6)
   {
     LedOff(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
-    LedOn(HOUR_LED_TWO);
+    LedOff(HOUR_LED_ONE);
+    LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 7)
   {
-    LedOn(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
-    LedOn(HOUR_LED_TWO);
+    LedOff(HOUR_LED_ZERO);
+    LedOff(HOUR_LED_ONE);
+    LedOff(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 8)
@@ -406,59 +393,39 @@ void Update_Display_Hours()
     LedOff(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
-    LedOn(HOUR_LED_THREE);
+    LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 9)
   {
-    LedOn(HOUR_LED_ZERO);
+    LedOff(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
-    LedOn(HOUR_LED_THREE);
+    LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 10)
   {
     LedOff(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
+    LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
-    LedOn(HOUR_LED_THREE);
+    LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 11)
   {
-    LedOn(HOUR_LED_ZERO);
-    LedOn(HOUR_LED_ONE);
+    LedOff(HOUR_LED_ZERO);
+    LedOff(HOUR_LED_ONE);
     LedOff(HOUR_LED_TWO);
-    LedOn(HOUR_LED_THREE);
+    LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 12)
   {
     LedOff(HOUR_LED_ZERO);
     LedOff(HOUR_LED_ONE);
-    LedOn(HOUR_LED_TWO);
-    LedOn(HOUR_LED_THREE);
+    LedOff(HOUR_LED_TWO);
+    LedOff(HOUR_LED_THREE);
   }
 } /* end Update_Display_Hours */
 
 void Time_Rollover()
 {
-  if(minuteCounter >= 60)
-  {
-    minuteCounter = minuteCounter - 60;
-    hourCounter = hourCounter + 1;
-    if(hourCounter == 12)
-    {
-      if(PM == false)
-      {
-        PM = true;
-      }
-      else if(PM == true)
-      {
-        PM = false;
-      }
-    }
-  }
   
-  if(hourCounter >= 13)
-  {
-    hourCounter = hourCounter - 12;
-  }
 } /* end Time_Rollover() */
