@@ -388,8 +388,8 @@ void Update_Display_Hours()
   else if(hourCounter == 6)
   {
     LedOff(HOUR_LED_ZERO);
-    LedOff(HOUR_LED_ONE);
-    LedOff(HOUR_LED_TWO);
+    LedOn(HOUR_LED_ONE);
+    LedOn(HOUR_LED_TWO);
     LedOff(HOUR_LED_THREE);
   }
   else if(hourCounter == 7)
