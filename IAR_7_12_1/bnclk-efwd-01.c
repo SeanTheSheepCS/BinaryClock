@@ -155,7 +155,15 @@ void ClockSM_Button_Press()
 {
   if(!(P2IN&P2_1_BUTTON_0))
   {
-    //currently does nothing other than start ticking the clock if we were in START
+    //Toggles AM/PM
+    if(LG_u8PM == true)
+    {
+      LG_u8PM = false;
+    }
+    else
+    {
+      LG_u8PM = true;
+    }
   }
   else if(!(P3IN&P3_7_BUTTON_1))
   {
