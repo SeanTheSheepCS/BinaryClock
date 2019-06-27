@@ -172,7 +172,7 @@ void ClockSM_Button_Press()
   }
   else if(!(P3IN&P3_6_BUTTON_2))
   {
-    LG_u8Minute_Counter += 60;  //button two increases the hour
+    LG_u8Hour_Counter++;  //button two increases the hour
     if(LG_u8Hour_Counter == 12)
     {
       if(LG_u8PM == false)
