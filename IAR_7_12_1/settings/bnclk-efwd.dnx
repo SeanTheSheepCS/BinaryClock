@@ -108,8 +108,7 @@
         <Sort>4 0</Sort>
     </SfrWindow>
     <Breakpoints>
-        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\bnclk-efwd-01.c}.159.5" 1 0 0 0 "" 0 ""</Bp0>
-        <Count>1</Count>
+        <Count>0</Count>
     </Breakpoints>
     <FET>
         <Clock_mode>39</Clock_mode>
